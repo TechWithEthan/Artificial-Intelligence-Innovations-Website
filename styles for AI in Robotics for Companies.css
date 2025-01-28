@@ -1,0 +1,157 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #a3c2f4, #f4a3c2);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #ff6f61;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    animation: bounce 1s infinite alternate;
+}
+
+.container {
+    width: 90%;
+    margin: 30px auto;
+}
+
+.section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+h2 {
+    color: #ff6f61;
+    font-size: 1.8em;
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+p {
+    line-height: 1.6;
+    text-align: justify;
+    font-size: 1.1em;
+    color: #555;
+}
+
+.section:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    background-color: #f7f7f7;
+}
+
+.fun-button {
+    display: inline-block;
+    background-color: #ff6f61;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
+
+.fun-button:hover {
+    background-color: #ff4e43;
+    transform: scale(1.1);
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .container {
+        width: 85%;
+    }
+}
+
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .section {
+        padding: 15px;
+    }
+
+    .fun-button {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.6em;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .section {
+        margin-bottom: 20px;
+        padding: 15px;
+    }
+
+    .fun-button {
+        padding: 10px 18px;
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.4em;
+    }
+
+    .section {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.4em;
+    }
+
+    .fun-button {
+        padding: 8px 15px;
+        font-size: 0.9em;
+    }
+}
