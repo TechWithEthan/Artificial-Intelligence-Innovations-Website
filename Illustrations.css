@@ -1,0 +1,51 @@
+body {
+    background-color: #f0f8ff;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.header {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.header h1 {
+    font-size: 3rem;
+    color: #ff6f61;
+    text-shadow: 2px 2px #ffcc5c;
+}
+
+.illustration-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.illustration-card {
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    width: 300px; /* Adjusted card width for better layout */
+}
+
+.illustration-card:hover {
+    transform: scale(1.05);
+}
+
+.illustration-card img {
+    width: 100%; /* Makes the image responsive within the card */
+    max-width: 250px; /* Increased max size of images */
+    height: auto;
+    border-radius: 10px;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ff6f61;
+    color: white;
+}

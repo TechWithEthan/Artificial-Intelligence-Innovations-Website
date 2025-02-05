@@ -1,0 +1,89 @@
+/* YouTube-like dark theme with a professional touch */
+body {
+  background-color: #0f0f0f;
+  color: #fff;
+  font-family: "Roboto", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Smooth fade-in effect */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Centered video container with animated floating effect */
+.video-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #181818;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  animation: floatUp 3s infinite alternate ease-in-out;
+}
+
+/* Floating effect for the video container */
+@keyframes floatUp {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-5px);
+  }
+}
+
+/* Improved button styling with bounce effect */
+.btn-custom {
+  background: #ff0000;
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 12px 18px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+/* Button bounce animation on hover */
+.btn-custom:hover {
+  background: #cc0000;
+  transform: scale(1.05);
+  animation: bounce 0.4s ease-in-out;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .video-container {
+    max-width: 95%;
+    margin: 20px auto;
+    padding: 15px;
+  }
+
+  .btn-custom {
+    width: 100%;
+    text-align: center;
+  }
+}
